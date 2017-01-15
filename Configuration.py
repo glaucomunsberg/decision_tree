@@ -5,7 +5,9 @@ class Configuration:
     
     _instance           = None
     
-    file_training_url   = "data/beach.csv"              # default file to open
+    file_training_url   = "data/beach.csv"              # default file to training set
+    file_examples_url   = "data/examples.csv"           # default file with test set
+    file_output_url     = "data/output.csv"
     file_depurated_url  = "data/beach_depurated.csv"    # file with the depurated files 
                                                         #   to be used at pruning
     splitter            = ","                           # comma is the default split caracter
