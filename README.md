@@ -2,10 +2,7 @@
     
 Algorithms ID3 and C4.5 were implemented and the codes run with Python >= 2.7
 
-> the attributes and values are not sensitive
-> pruning method only work on C45
-
-##### To run
+#### Run
 
 `$ python Main.py [-id3|-c45|-c45p] [-t|-d|-i|-o FILE_PATH]`
 
@@ -19,7 +16,7 @@ Attribute | Description
 `-i FILE` | File input with examples that you want test
 `-o FILE` | File outut with results from examples tested by the algoritm
 
-##### To config
+#### Config
 
 You always can change the configuration on the Configuration.py
 
@@ -35,3 +32,9 @@ unknown_values    | ['','-','?']              | values that describe a empty val
 min_error         | 1.0                       | min erro to be use at pruning
 print_tabs_num    | 0                         | used to format the print method tree
 num_split_columns | 1                         | number of columns removed (left side) of the file
+
+#### Notes
+
+> the attributes and values are not sensitive
+
+> pruning method only work on C45
