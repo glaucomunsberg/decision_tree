@@ -236,9 +236,12 @@ class Attributs:
                 list_intervals.append((borne_inf, borne_sup))
                 indice_borne_inf = i
                 
-        # Last interval is positive
-        list_intervals.append((list_intervals[-1][1], positive_value_infinity))
-
+        # last interval is positive
+        try:
+            list_intervals.append((list_intervals[-1][1], positive_value_infinity))
+        except Exception, e:
+            print e.message,list_intervals,nom_attribut
+            
         for exemple in self.list_exemples:
             for intervalle in list_intervals:
                 if float(exemple.dict_attributs[nom_attribut]) < intervalle[1]:

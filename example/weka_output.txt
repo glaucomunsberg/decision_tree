@@ -1,0 +1,347 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     traing-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1186
+Attributes:   22
+               course
+               years_open
+               diss_doce_year
+               tese_doce_year
+               peri_doce_year
+               weight_a1
+               weight_a2
+               weight_b1
+               weight_b2
+               weight_b3
+               weight_b4
+               weight_b5
+               weight_c
+               weight_nc
+               qual_doce_year
+               conf_doce_year
+               livr_doce_year
+               capi_doce_year
+              arti_doce_year
+              has_phd
+              is_academic
+              level
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+has_phd = true
+|    weight_a1 <= 9
+|   |    weight_a2 <= 12.75
+|   |   |    weight_b1 <= 31.8
+|   |   |   |    tese_doce_year <= 0: quatro (194.0/54.0)
+|   |   |   |    tese_doce_year > 0
+|   |   |   |   |    weight_b1 <= 0: tres (3.0)
+|   |   |   |   |    weight_b1 > 0
+|   |   |   |   |   |    course = admin_ciencontabeis_tur: seis (2.0/1.0)
+|   |   |   |   |   |    course = antropologia_arqueologia: quatro (0.0)
+|   |   |   |   |   |    course = arquitetura_urbanismo: cinco (2.0)
+|   |   |   |   |   |    course = artes_musica: cinco (3.0/1.0)
+|   |   |   |   |   |    course = biologicas_i: quatro (12.0/2.0)
+|   |   |   |   |   |    course = biologicas_ii: quatro (5.0/2.0)
+|   |   |   |   |   |    course = biologicas_iii: quatro (0.0)
+|   |   |   |   |   |    course = biotecnologia: cinco (3.0/1.0)
+|   |   |   |   |   |    course = cienagrarias_i
+|   |   |   |   |   |   |    weight_b1 <= 6.6
+|   |   |   |   |   |   |   |    conf_doce_year <= 0.071429: quatro (3.0)
+|   |   |   |   |   |   |   |    conf_doce_year > 0.071429: tres (2.0)
+|   |   |   |   |   |   |    weight_b1 > 6.6
+|   |   |   |   |   |   |   |    weight_nc <= 0.25: cinco (23.0/5.0)
+|   |   |   |   |   |   |   |    weight_nc > 0.25: quatro (3.0)
+|   |   |   |   |   |    course = ciencia_alimentos: seis (3.0/2.0)
+|   |   |   |   |   |    course = cienpolitica_relacoesint: seis (2.0)
+|   |   |   |   |   |    course = computacao: quatro (0.0)
+|   |   |   |   |   |    course = ecologia: quatro (0.0)
+|   |   |   |   |   |    course = educacao_fisica: quatro (1.0)
+|   |   |   |   |   |    course = engenharias_i
+|   |   |   |   |   |   |    tese_doce_year <= 0.071429: quatro (5.0/1.0)
+|   |   |   |   |   |   |    tese_doce_year > 0.071429: cinco (3.0/1.0)
+|   |   |   |   |   |    course = engenharias_ii: quatro (1.0)
+|   |   |   |   |   |    course = engenharias_iii
+|   |   |   |   |   |   |    peri_doce_year <= 0.15: quatro (3.0/1.0)
+|   |   |   |   |   |   |    peri_doce_year > 0.15: cinco (6.0/1.0)
+|   |   |   |   |   |    course = engenharias_iv: quatro (3.0)
+|   |   |   |   |   |    course = geociencias: quatro (5.0/1.0)
+|   |   |   |   |   |    course = geografia: cinco (2.0/1.0)
+|   |   |   |   |   |    course = letras_linguistica
+|   |   |   |   |   |   |    weight_a2 <= 8.25
+|   |   |   |   |   |   |   |    weight_b1 <= 5.4
+|   |   |   |   |   |   |   |   |    weight_b3 <= 2.4
+|   |   |   |   |   |   |   |   |   |    weight_c <= 0.07
+|   |   |   |   |   |   |   |   |   |   |    peri_doce_year <= 0.071429: quatro (2.0)
+|   |   |   |   |   |   |   |   |   |   |    peri_doce_year > 0.071429: cinco (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |    weight_c > 0.07: cinco (3.0)
+|   |   |   |   |   |   |   |   |    weight_b3 > 2.4: quatro (5.0)
+|   |   |   |   |   |   |   |    weight_b1 > 5.4: cinco (5.0/2.0)
+|   |   |   |   |   |   |    weight_a2 > 8.25: seis (2.0)
+|   |   |   |   |   |    course = mat_prob_estatistica: cinco (2.0)
+|   |   |   |   |   |    course = materiais: quatro (0.0)
+|   |   |   |   |   |    course = medicina_veterinaria: quatro (2.0)
+|   |   |   |   |   |    course = odontologia
+|   |   |   |   |   |   |    weight_b4 <= 5.75: cinco (3.0/1.0)
+|   |   |   |   |   |   |    weight_b4 > 5.75: quatro (4.0)
+|   |   |   |   |   |    course = sociologia
+|   |   |   |   |   |   |    weight_a1 <= 1.8: quatro (3.0/1.0)
+|   |   |   |   |   |   |    weight_a1 > 1.8: cinco (5.0/1.0)
+|   |   |    weight_b1 > 31.8
+|   |   |   |    weight_nc <= 0.04
+|   |   |   |   |    weight_b1 <= 45.6: seis (5.0/2.0)
+|   |   |   |   |    weight_b1 > 45.6: cinco (2.0)
+|   |   |   |    weight_nc > 0.04: cinco (22.0/3.0)
+|   |    weight_a2 > 12.75
+|   |   |    capi_doce_year <= 0.142857: cinco (58.0/25.0)
+|   |   |    capi_doce_year > 0.142857: sete (3.0)
+|    weight_a1 > 9
+|   |    tese_doce_year <= 0
+|   |   |    course = admin_ciencontabeis_tur: cinco (0.0)
+|   |   |    course = antropologia_arqueologia: cinco (0.0)
+|   |   |    course = arquitetura_urbanismo: cinco (0.0)
+|   |   |    course = artes_musica: cinco (0.0)
+|   |   |    course = biologicas_i
+|   |   |   |    conf_doce_year <= 0
+|   |   |   |   |    weight_b5 <= 3.1
+|   |   |   |   |   |    weight_b5 <= 1.6
+|   |   |   |   |   |   |    weight_a2 <= 13.5: cinco (2.0)
+|   |   |   |   |   |   |    weight_a2 > 13.5: quatro (2.0)
+|   |   |   |   |   |    weight_b5 > 1.6: cinco (3.0)
+|   |   |   |   |    weight_b5 > 3.1: quatro (3.0)
+|   |   |   |    conf_doce_year > 0: quatro (5.0/1.0)
+|   |   |    course = biologicas_ii: tres (1.0)
+|   |   |    course = biologicas_iii: cinco (0.0)
+|   |   |    course = biotecnologia: cinco (2.0)
+|   |   |    course = cienagrarias_i
+|   |   |   |    weight_nc <= 0.18: quatro (2.0)
+|   |   |   |    weight_nc > 0.18: cinco (3.0)
+|   |   |    course = ciencia_alimentos: cinco (2.0)
+|   |   |    course = cienpolitica_relacoesint: cinco (0.0)
+|   |   |    course = computacao: seis (1.0)
+|   |   |    course = ecologia: cinco (5.0/1.0)
+|   |   |    course = educacao_fisica: seis (2.0/1.0)
+|   |   |    course = engenharias_i: cinco (0.0)
+|   |   |    course = engenharias_ii: quatro (7.0/1.0)
+|   |   |    course = engenharias_iii
+|   |   |   |    diss_doce_year <= 0.105263: quatro (4.0/1.0)
+|   |   |   |    diss_doce_year > 0.105263: cinco (2.0)
+|   |   |    course = engenharias_iv
+|   |   |   |    weight_a2 <= 8.25: cinco (2.0)
+|   |   |   |    weight_a2 > 8.25: quatro (3.0/1.0)
+|   |   |    course = geociencias
+|   |   |   |    weight_b1 <= 16.2: sete (3.0/2.0)
+|   |   |   |    weight_b1 > 16.2: seis (4.0)
+|   |   |    course = geografia: cinco (0.0)
+|   |   |    course = letras_linguistica: cinco (3.0)
+|   |   |    course = mat_prob_estatistica: seis (3.0)
+|   |   |    course = materiais: cinco (2.0/1.0)
+|   |   |    course = medicina_veterinaria: seis (2.0/1.0)
+|   |   |    course = odontologia
+|   |   |   |    weight_b5 <= 2.2
+|   |   |   |   |    livr_doce_year <= 0: tres (3.0/1.0)
+|   |   |   |   |    livr_doce_year > 0: cinco (6.0)
+|   |   |   |    weight_b5 > 2.2: quatro (3.0)
+|   |   |    course = sociologia: cinco (0.0)
+|   |    tese_doce_year > 0
+|   |   |    weight_a2 <= 34.5
+|   |   |   |    diss_doce_year <= 0
+|   |   |   |   |    weight_nc <= 0.08
+|   |   |   |   |   |    weight_nc <= 0.04: tres (3.0/1.0)
+|   |   |   |   |   |    weight_nc > 0.04: quatro (4.0)
+|   |   |   |   |    weight_nc > 0.08
+|   |   |   |   |   |    peri_doce_year <= 0.375: cinco (3.0)
+|   |   |   |   |   |    peri_doce_year > 0.375: seis (3.0/1.0)
+|   |   |   |    diss_doce_year > 0
+|   |   |   |   |    course = admin_ciencontabeis_tur: seis (0.0)
+|   |   |   |   |    course = antropologia_arqueologia: seis (1.0)
+|   |   |   |   |    course = arquitetura_urbanismo: seis (0.0)
+|   |   |   |   |    course = artes_musica: seis (0.0)
+|   |   |   |   |    course = biologicas_i
+|   |   |   |   |   |    weight_a2 <= 18.75: cinco (6.0/1.0)
+|   |   |   |   |   |    weight_a2 > 18.75: seis (9.0/1.0)
+|   |   |   |   |    course = biologicas_ii
+|   |   |   |   |   |    peri_doce_year <= 0.315789: cinco (2.0)
+|   |   |   |   |   |    peri_doce_year > 0.315789: seis (3.0/1.0)
+|   |   |   |   |    course = biologicas_iii: seis (2.0)
+|   |   |   |   |    course = biotecnologia: seis (0.0)
+|   |   |   |   |    course = cienagrarias_i
+|   |   |   |   |   |    peri_doce_year <= 0.375: quatro (2.0)
+|   |   |   |   |   |    peri_doce_year > 0.375
+|   |   |   |   |   |   |    conf_doce_year <= 0: seis (2.0)
+|   |   |   |   |   |   |    conf_doce_year > 0
+|   |   |   |   |   |   |   |    tese_doce_year <= 0.076923: cinco (4.0)
+|   |   |   |   |   |   |   |    tese_doce_year > 0.076923: sete (2.0)
+|   |   |   |   |    course = ciencia_alimentos: sete (1.0)
+|   |   |   |   |    course = cienpolitica_relacoesint: sete (1.0)
+|   |   |   |   |    course = computacao
+|   |   |   |   |   |    weight_nc <= 0.11: seis (2.0)
+|   |   |   |   |   |    weight_nc > 0.11: sete (2.0)
+|   |   |   |   |    course = ecologia: cinco (2.0)
+|   |   |   |   |    course = educacao_fisica: seis (1.0)
+|   |   |   |   |    course = engenharias_i
+|   |   |   |   |   |    capi_doce_year <= 0: cinco (3.0/1.0)
+|   |   |   |   |   |    capi_doce_year > 0: sete (2.0)
+|   |   |   |   |    course = engenharias_ii
+|   |   |   |   |   |    diss_doce_year <= 0.071429: quatro (2.0)
+|   |   |   |   |   |    diss_doce_year > 0.071429
+|   |   |   |   |   |   |    weight_a1 <= 59.4
+|   |   |   |   |   |   |   |    tese_doce_year <= 0.071429
+|   |   |   |   |   |   |   |   |    weight_a2 <= 8.25: cinco (2.0)
+|   |   |   |   |   |   |   |   |    weight_a2 > 8.25: seis (2.0)
+|   |   |   |   |   |   |   |    tese_doce_year > 0.071429: seis (3.0)
+|   |   |   |   |   |   |    weight_a1 > 59.4: sete (6.0/1.0)
+|   |   |   |   |    course = engenharias_iii
+|   |   |   |   |   |    weight_a2 <= 12.75: seis (3.0)
+|   |   |   |   |   |    weight_a2 > 12.75
+|   |   |   |   |   |   |    diss_doce_year <= 0.125: cinco (3.0)
+|   |   |   |   |   |   |    diss_doce_year > 0.125: sete (2.0)
+|   |   |   |   |    course = engenharias_iv
+|   |   |   |   |   |    livr_doce_year <= 0: cinco (2.0)
+|   |   |   |   |   |    livr_doce_year > 0: seis (5.0/2.0)
+|   |   |   |   |    course = geociencias: sete (1.0)
+|   |   |   |   |    course = geografia: sete (1.0)
+|   |   |   |   |    course = letras_linguistica
+|   |   |   |   |   |    diss_doce_year <= 0.125
+|   |   |   |   |   |   |    weight_b3 <= 10.2
+|   |   |   |   |   |   |   |    weight_nc <= 0.1: sete (3.0)
+|   |   |   |   |   |   |   |    weight_nc > 0.1: seis (4.0)
+|   |   |   |   |   |   |    weight_b3 > 10.2: cinco (3.0)
+|   |   |   |   |   |    diss_doce_year > 0.125: cinco (3.0)
+|   |   |   |   |    course = mat_prob_estatistica: seis (0.0)
+|   |   |   |   |    course = materiais: seis (1.0)
+|   |   |   |   |    course = medicina_veterinaria: seis (3.0/1.0)
+|   |   |   |   |    course = odontologia
+|   |   |   |   |   |    livr_doce_year <= 0.076923: cinco (10.0/1.0)
+|   |   |   |   |   |    livr_doce_year > 0.076923: seis (2.0)
+|   |   |   |   |    course = sociologia: sete (2.0)
+|   |   |    weight_a2 > 34.5
+|   |   |   |    weight_b4 <= 7.25
+|   |   |   |   |    weight_b5 <= 0.2
+|   |   |   |   |   |    weight_b2 <= 26.1: seis (2.0)
+|   |   |   |   |   |    weight_b2 > 26.1: sete (9.0)
+|   |   |   |   |    weight_b5 > 0.2: sete (12.0/5.0)
+|   |   |   |    weight_b4 > 7.25: seis (6.0/1.0)
+has_phd = false
+|    weight_b2 <= 3.15
+|   |    livr_doce_year <= 0
+|   |   |    years_open <= 10: tres (172.0/14.0)
+|   |   |    years_open > 10
+|   |   |   |    weight_a2 <= 1.5: tres (96.0/19.0)
+|   |   |   |    weight_a2 > 1.5
+|   |   |   |   |    course = admin_ciencontabeis_tur
+|   |   |   |   |   |    years_open <= 13: tres (2.0)
+|   |   |   |   |   |    years_open > 13: quatro (4.0)
+|   |   |   |   |    course = antropologia_arqueologia: tres (1.0)
+|   |   |   |   |    course = arquitetura_urbanismo: tres (0.0)
+|   |   |   |   |    course = artes_musica: quatro (2.0/1.0)
+|   |   |   |   |    course = biologicas_i
+|   |   |   |   |   |    weight_nc <= 0.04: tres (4.0)
+|   |   |   |   |   |    weight_nc > 0.04: quatro (2.0)
+|   |   |   |   |    course = biologicas_ii: tres (0.0)
+|   |   |   |   |    course = biologicas_iii: tres (0.0)
+|   |   |   |   |    course = biotecnologia: tres (0.0)
+|   |   |   |   |    course = cienagrarias_i: tres (1.0)
+|   |   |   |   |    course = ciencia_alimentos: tres (0.0)
+|   |   |   |   |    course = cienpolitica_relacoesint: tres (0.0)
+|   |   |   |   |    course = computacao: quatro (5.0/1.0)
+|   |   |   |   |    course = ecologia: tres (1.0)
+|   |   |   |   |    course = educacao_fisica: quatro (3.0/1.0)
+|   |   |   |   |    course = engenharias_i
+|   |   |   |   |   |    weight_b1 <= 1.2: tres (5.0/1.0)
+|   |   |   |   |   |    weight_b1 > 1.2: quatro (3.0)
+|   |   |   |   |    course = engenharias_ii: tres (2.0)
+|   |   |   |   |    course = engenharias_iii
+|   |   |   |   |   |    weight_a1 <= 3.6: tres (2.0)
+|   |   |   |   |   |    weight_a1 > 3.6: quatro (3.0)
+|   |   |   |   |    course = engenharias_iv: tres (4.0/1.0)
+|   |   |   |   |    course = geociencias: tres (0.0)
+|   |   |   |   |    course = geografia: quatro (3.0)
+|   |   |   |   |    course = letras_linguistica
+|   |   |   |   |   |    weight_b2 <= 1.8: quatro (3.0)
+|   |   |   |   |   |    weight_b2 > 1.8: tres (3.0)
+|   |   |   |   |    course = mat_prob_estatistica: quatro (2.0)
+|   |   |   |   |    course = materiais: tres (0.0)
+|   |   |   |   |    course = medicina_veterinaria: tres (0.0)
+|   |   |   |   |    course = odontologia: tres (7.0/1.0)
+|   |   |   |   |    course = sociologia: quatro (1.0)
+|   |    livr_doce_year > 0
+|   |   |    years_open <= 10: tres (4.0)
+|   |   |    years_open > 10: quatro (10.0/2.0)
+|    weight_b2 > 3.15
+|   |    years_open <= 11: tres (96.0/37.0)
+|   |    years_open > 11: quatro (95.0/28.0)
+
+Number of Leaves  : 	170
+
+Size of the tree : 	243
+
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal)  course          	--> 1 (nominal) course
+(numeric)  years_open      	--> 2 (numeric)  years_open
+(numeric)  diss_doce_year  	--> 3 (numeric)  diss_doce_year
+(numeric)  tese_doce_year  	--> 4 (numeric)  tese_doce_year
+(numeric)  peri_doce_year  	--> 5 (numeric)  peri_doce_year
+(numeric)  weight_a1       	--> 6 (numeric)  weight_a1
+(numeric)  weight_a2       	--> 7 (numeric)  weight_a2
+(numeric)  weight_b1       	--> 8 (numeric)  weight_b1
+(numeric)  weight_b2       	--> 9 (numeric)  weight_b2
+(numeric)  weight_b3       	--> 10 (numeric)  weight_b3
+(numeric)  weight_b4       	--> 11 (numeric)  weight_b4
+(numeric)  weight_b5       	--> 12 (numeric)  weight_b5
+(numeric)  weight_c        	--> 13 (numeric)  weight_c
+(numeric)  weight_nc       	--> 14 (numeric)  weight_nc
+(numeric)  qual_doce_year  	--> 15 (numeric)  qual_doce_year
+(numeric)  conf_doce_year  	--> 16 (numeric)  conf_doce_year
+(numeric)  livr_doce_year  	--> 17 (numeric)  livr_doce_year
+(numeric)  capi_doce_year  	--> 18 (numeric)  capi_doce_year
+(numeric) arti_doce_year   	--> 19 (numeric) arti_doce_year
+(nominal) has_phd          	--> 20 (nominal) has_phd
+(nominal) is_academic      	--> 21 (nominal) is_academic
+(nominal) level            	--> 22 (nominal) level
+
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          15               62.5    %
+Incorrectly Classified Instances         9               37.5    %
+Kappa statistic                          0.5091
+Mean absolute error                      0.1825
+Root mean squared error                  0.3478
+Relative absolute error                 60.9608 %
+Root relative squared error             88.2543 %
+Total Number of Instances               24     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.045    0.500      0.500    0.500      0.455    0.898     0.417     sete
+                 0.500    0.000    1.000      0.500    0.667      0.674    0.625     0.583     seis
+                 0.750    0.250    0.375      0.750    0.500      0.395    0.831     0.452     cinco
+                 0.556    0.200    0.625      0.556    0.588      0.365    0.726     0.575     quatro
+                 0.800    0.000    1.000      0.800    0.889      0.872    0.995     0.967     tres
+Weighted Avg.    0.625    0.120    0.714      0.625    0.642      0.535    0.797     0.624     
+
+=== Confusion Matrix ===
+
+ a b c d e   <-- classified as
+ 1 0 1 0 0 | a = sete
+ 1 2 0 1 0 | b = seis
+ 0 0 3 1 0 | c = cinco
+ 0 0 4 5 0 | d = quatro
+ 0 0 0 1 4 | e = tres

@@ -79,7 +79,11 @@ class ID3:
         # update label to the next node explored
         while not isinstance(current_node, Leaf):
             value = exemple.dict_attributs[current_node.attribut_test].lower()
-            current_node = current_node.children[value]
+            try:
+                current_node = current_node.children[value]
+            except:
+                print 'Can\'t get value ',value,' from column ',current_node.attribut_test, ' in ',exemple.dict_attributs
+                exit()
             
         exemple.label = current_node.label
 

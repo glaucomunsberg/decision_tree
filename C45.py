@@ -104,7 +104,12 @@ class C45(ID3):
                         value = interval
                         break
             finally:
-                current_node = current_node.children[value]
+                try:
+                    current_node = current_node.children[value]
+                except:
+                    print 'Can\'t get value ',value,' from column ',current_node.attribut_test,"\n"
+                    print 'Children from this node: ', current_node.children
+                    exit()
         exemple.label = current_node.label
         
     #
