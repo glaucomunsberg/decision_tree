@@ -1,0 +1,1 @@
+All files with csv extension will be sliced to training and test dataset

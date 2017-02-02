@@ -12,9 +12,9 @@ if __name__ == "__main__":
     weight_qualis   =[0.9,0.75,0.6,0.45,0.3,0.25,0.1,0.07,0.01]
     # year base
     base_year       = 2016
-    cut_year        = 1996 # year that has become interesting analyze the brazil's productions 
+    cut_year        = 2013 # year that has become interesting analyze the brazil's productions 
     num_error_di_ti = 0
-    file_out = open('traing.csv', 'w')
+    file_out = open('training.csv', 'w')
     file_out.write("row, course, years_open, diss_doce_year, tese_doce_year, peri_doce_year, weight_a1, weight_a2, weight_b1, weight_b2, weight_b3, weight_b4, weight_b5, weight_c, weight_nc, qual_doce_year, conf_doce_year, livr_doce_year, capi_doce_year,arti_doce_year,has_phd,is_academic,level")
     file_out.write('\n')
     

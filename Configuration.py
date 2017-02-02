@@ -18,6 +18,7 @@ class Configuration:
                                                         #   0 don't remove any collumn
                                                         #   1 remove the first
                                                         #   2 remove the first e secound collumns...
+    slicer_percentage   = 0.6
     
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
